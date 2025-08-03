@@ -6,8 +6,8 @@ A collection of foundational machine learning algorithms, implemented step by st
 
 ## Algorithms
 
-### Supervised Learning
-- Linear Regression
+### Supervised learning
+- Linear Regression (*Completed*)
 - Logistic Regression
 - k-Nearest Neighbors (k-NN)
 - Naive Bayes
@@ -17,7 +17,7 @@ A collection of foundational machine learning algorithms, implemented step by st
 - Perceptron
 - Multilayer Perceptron (MLP)
 
-### Unsupervised Learning
+### Unsupervised learning
 - k-Means Clustering
 - Hierarchical Clustering
 - Principal Component Analysis (PCA)
