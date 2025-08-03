@@ -1,6 +1,6 @@
-# ml-from-scratch
+# Machine Learning from Scratch
 
-A collection of foundational machine learning algorithms, implemented step by step in Python. This project is designed to deepen understanding of the core principles behind modern machine learning—without relying on high-level libraries.
+A collection of fundamental machine learning algorithms, implemented step by step in Python. This project is designed to deepen understanding of the core principles behind modern machine learning—without relying on high-level libraries.
 
 ---
 
@@ -29,7 +29,7 @@ A collection of foundational machine learning algorithms, implemented step by st
 Clone the repository and install dependencies:
 
 ```bash
-git clone <repository url>
+git clone https://github.com/aidansaint/ml-from-scratch
 cd ml-from-scratch
 pip install -r requirements.txt
 ```
