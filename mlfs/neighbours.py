@@ -16,22 +16,22 @@ class KNeighboursClassifier:
 
     # Make predictions using squared euclidean distances.
     def predict(self, X: np.ndarray) -> np.ndarray:
-        # Compute dot products and norms.
-        a = np.sum(self.X_train**2, axis=1).reshape(1, -1)
-        b = np.sum(X**2, axis=1).reshape(-1, 1)
+        # Compute squared L2 norms.
+        X_train_norms = np.sum(self.X_train**2, axis=1).reshape(1, -1)
+        X_norms = np.sum(X**2, axis=1).reshape(-1, 1)
 
         # Calculate squared distances.
-        D_squared = a + b - 2 * (X @ self.X_train.T)
+        D_squared = X_train_norms + X_norms - 2 * (X @ self.X_train.T)
 
         # Sort squared distances and get top k neighbour labels.
-        neighbours_idx = np.argpartition(D_squared, self.n_neighbours - 1, axis=1)[
+        neighbour_indices = np.argpartition(D_squared, self.n_neighbours - 1, axis=1)[
             :, : self.n_neighbours
         ]
-        neighbour_labels = self.y_train[neighbours_idx]
+        labels = self.y_train[neighbour_indices]
 
         # Perform majority vote to determine predictions.
         y_preds = []
-        for row in neighbour_labels:
+        for row in labels:
             counter = Counter(row)
             max_freq = max(counter.values())
 
