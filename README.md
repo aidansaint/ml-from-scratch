@@ -9,7 +9,7 @@ A collection of fundamental machine learning algorithms, implemented step by ste
 ### Supervised learning
 - Linear Regression (*Completed*)
 - Logistic Regression
-- k-Nearest Neighbors (k-NN)
+- k-Nearest Neighbors (k-NN) (*Completed*)
 - Naive Bayes
 - Decision Tree
 - Random Forest
@@ -18,7 +18,7 @@ A collection of fundamental machine learning algorithms, implemented step by ste
 - Multilayer Perceptron (MLP)
 
 ### Unsupervised learning
-- k-Means Clustering
+- k-Means Clustering (*Completed*)
 - Hierarchical Clustering
 - Principal Component Analysis (PCA)
 
